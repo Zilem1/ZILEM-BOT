@@ -1,8 +1,8 @@
 [phases.setup]
-nixPkgs = ["python312Full", "python312Packages.pip"]
+nixPkgs = ["python312Full"]
 
 [phases.install]
-cmds = ["pip install -r requirements.txt"]
+cmds = ["pip install --break-system-packages -r requirements.txt"]
 
 [start]
 cmd = "python main.py"
